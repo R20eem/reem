@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Christopher Nolan's Gallery</title>
+    <link rel="stylesheet" href="nolan_styles.css">     <!-- link to css file -->
+</head>
+<body id="review">
+    <header>
+        <h1>SHARE YOUR REVIEWS</h1>     <!-- The title of the page -->
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>           <!-- Navegation sidebar which contains links to all pages -->
+                <ul>        <!-- I created a sidebar so it can be easy to navegate the website -->
+                    <li><a href="chris.html">HOME</a></li>
+                    <li><a href="interstellar.html">INTERSTELLAR</a></li>
+                    <li><a href="the_dark_knight.html">THE DARK KNIGHT</a></li>
+                    <li><a href="inception.html">INCEPTION</a></li>
+                    <li><a href="oppenhimer.html">OPPENHEIMER</a></li>                    
+                    <li><a href="review.html">REVIEWS</a></li>
+                    <li><a href="quizzes.html">TEST YOUR KNOWLEDGE</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <form> <!-- I created a form to submite information by the user -->
+                <div>     
+                    <label for="name">Name:</label>     <!-- a label for submitting the user's name with type text -->
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>    <!-- a label for submitting the user's email with type email -->
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>     <!-- a label for submitting the user's password with type password, and make the password invisible to the user-->
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="age">Age:</label>       <!-- a label for submitting the user's age with type number, num less 0 cannot be submittied-->
+                    <input type="number" id="age" name="age" min="0" required>
+                </div>
+                <div>
+                    <label for="score">Your Score (out of 5):</label>   <!-- a label for submitting the user's score on the movie, they can write the movie name when writing the review-->
+                    <select id="score" name="score">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">   <!-- a checkbox for subscibing to the newsletter -->
+                    <label for="newsletter">Subscribe to Newsletter</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="privacy" name="privacy" required>     <!-- a checkbox for privacy policy -->
+                    <label for="privacy">I agree to the Privacy Policy</label>
+                </div>
+                <div>
+                    <label for="review">Your Review (please provide the movie title):</label>     <!-- This is a text area for the user to write their review -->
+                    <textarea id="review" name="review" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit Review</button>      <!-- a submit button for the user to submit their review -->
+            </form>
+        </main>
+    </div>
+    <footer>
+        <div class="social-media">
+            <h4>Follow us on</h4> <!-- this section is for the movie poster with class=movie-poster, it contain description of the poster with a link to the image -->
+            <a href="https://X.com/x" target="_blank" aria-label="X">X</a> <!-- Text link for X -->
+            <span> | </span> <!-- Separator for visual clarity -->
+            <a href="https://instagram.com/x" target="_blank" aria-label="Instagram">Instagram</a> <!-- Text link for Instagram -->
+            <span> | </span> <!-- Separator for visual clarity -->
+            <a href="https://facebook.com/x" target="_blank" aria-label="Facebook">Facebook</a> <!-- Text link for Facebook -->
+        </div>
+        <p>&copy; 2024 REEM. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Define color scheme and fonts using CSS variables for consistency and easy maintenance */
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.sidebar a {
+    color: #f0f0f0; /* Change #007BFF to your desired font color */
+}
+
+.sidebar a:hover {
+    color: #585a5c; /* Darker shade of blue for hover effect, change as needed */
+}
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #82b7f7f8;
+    color: #000000;
+}
+
+/* Improved container layout with flexbox for better alignment and spacing */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#030303;
+    color: #f0f0f0f0;
+}
+
+/* Sidebar navigation styles */
+.sidebar {
+    flex: 1 1 200px; /* Flex grow, flex shrink, and base width */
+    -webkit-margin-collapse: 20px;
+    color: #756f6ff8;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #c2b5b5f8;
+}
+
+/* Main content and form styling */
+form {
+    max-width: 600px; /* Sets a max width for the form */
+    margin: 0 auto; /* Centers the form in the page */
+    padding: 20px;
+    background-color: #F8F8F8; /* Off-white background for the form */
+    border-radius: 10px; /* Adds rounded corners to the form */
+    color: #000000;
+}
+
+form div {
+    margin-bottom: 15px; /* Adds space between form fields */
+}
+
+form label {
+    display: block; /* Makes the label take up the full width */
+    margin-bottom: 5px; /* Adds a little space between the label and the input field */
+    font-weight: bold; /* Makes the label text bold */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%; /* Makes the input take up the full width of its container */
+    padding: 10px; /* Adds some padding inside the input */
+    border-radius: 5px; /* Adds rounded corners to the inputs */
+    border: 1px solid #ccc; /* Adds a border to the inputs */
+    box-sizing: border-box; /* Ensures padding does not affect the final size of the inputs */
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px; /* Adds a little space between the checkbox and its label */
+}
+
+form button {
+    display: block; /* Makes the button take up the full width */
+    width: 100%;
+    padding: 10px 0; /* Adds padding to the top and bottom of the button */
+    background-color: #5b758f; /* Sets the button color */
+    color: #ffffff; /* Sets the button text color */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Adds rounded corners to the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    font-size: 16px; /* Increases the font size of the button text */
+}
+
+form button:hover {
+    background-color: #395471; /* Changes the button color when hovering */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        width: auto;
+        padding: 15px;
+    }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Social media and footer styles */
+.social-media a {
+    color: var(--white-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p {
+    color: var(--white-color);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+th {
+    background-color: var(--table-header-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--accent-color);
+}

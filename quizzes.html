@@ -1,0 +1,70 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inception - Christopher Nolan's Gallery</title>
+    <link rel="stylesheet" href="nolan_styles.css"> <!-- link to css file -->
+</head>
+<body id="review">
+    <header>
+        <h1>SHARE YOUR REVIEWS</h1>     <!-- The title of the page -->
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>           <!-- Navegation sidebar which contains links to all pages -->
+                <ul>        <!-- I created a sidebar so it can be easy to navegate the website -->
+                    <li><a href="chris.html">HOME</a></li>
+                    <li><a href="interstellar.html">INTERSTELLAR</a></li>
+                    <li><a href="the_dark_knight.html">THE DARK KNIGHT</a></li>
+                    <li><a href="inception.html">INCEPTION</a></li>
+                    <li><a href="oppenhimer.html">OPPENHEIMER</a></li>                    
+                    <li><a href="review.html">REVIEWS</a></li>
+                    <li><a href="quizzes.html">TEST YOUR KNOWLEDGE</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="quiz-section">
+            <form action="submit_quiz.php" method="POST">
+                <div class="question">
+                    <p class="question-title">Question 1: In "Inception," how do characters distinguish the dream world from reality?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="question1" value="A"> Totem</label>
+                        <label class="option"><input type="radio" name="question1" value="B"> A piece of glass</label>
+                        <label class="option"><input type="radio" name="question1" value="C"> Candle</label>
+                        <label class="option"><input type="radio" name="question1" value="D"> A rare stone</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p class="question-title">Question 2: What is the central theme of "The Prestige"?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="question2" value="A"> Time travel</label>
+                        <label class="option"><input type="radio" name="question2" value="B"> Dreams exploration</label>
+                        <label class="option"><input type="radio" name="question2" value="C"> Magic</label>
+                        <label class="option"><input type="radio" name="question2" value="D"> The second world war</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p class="question-title">Question 4: In "Interstellar," what is the name of the robot assistant that accompanies the astronauts?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="question4" value="A"> Bat</label>
+                        <label class="option"><input type="radio" name="question4" value="B"> x-305</label>
+                        <label class="option"><input type="radio" name="question4" value="C"> TARS</label>
+                        <label class="option"><input type="radio" name="question4" value="D"> ROBOT-SPACE</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit Answers</button>
+            </form>
+        </main>
+        >
+    </div>
+    <footer>
+        <div class="social-media">
+            <h4>Follow us on</h4> <!-- this section is for the movie poster with class=movie-poster, it contain description of the poster with a link to the image -->
+            <a href="https://X.com/x" target="_blank" aria-label="X">X</a> <!-- Text link for X -->
+            <span> | </span> <!-- Separator for visual clarity -->
+            <a href="https://instagram.com/x" target="_blank" aria-label="Instagram">Instagram</a> <!-- Text link for Instagram -->
+            <span> | </span> <!-- Separator for visual clarity -->
+            <a href="https://facebook.com/x" target="_blank" aria-label="Facebook">Facebook</a> <!-- Text link for Facebook -->
+        </div>
+        <p>&copy; 2024 REEM. All rights reserved.</p>

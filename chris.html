@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Nolan's Gallery</title>
+    <link rel="stylesheet" href="nolan_styles.css"> <!-- link to css file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Christopher Nolan's Gallery</h1>     <!-- Header in the top of the page -->
+    </header>
+    <div class="container">
+        <aside class="sidebar"> 
+            <nav>              <!-- Navegation sidebar which contains links to all pages -->
+                <ul>           <!-- I created a sidebar so it can be easy to navegate the website -->
+                    <li><a href="chris.html">HOME</a></li>
+                    <li><a href="interstellar.html">INTERSTELLAR</a></li>
+                    <li><a href="the_dark_knight.html">THE DARK KNIGHT</a></li>
+                    <li><a href="inception.html">INCEPTION</a></li>
+                    <li><a href="oppenhimer.html">OPPENHEIMER</a></li>                    
+                    <li><a href="review.html">REVIEWS</a></li>
+                    <li><a href="quizzes.html">TEST YOUR KNOWLEDGE</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section id="nolan-info"> <!-- Main contant1: Christopher Nolan Info, id=nolan info-->
+                <h2>About Christopher Nolan</h2>
+                <p>Christopher Nolan is a British-American film director, producer, and screenwriter. He is one of the highest-grossing directors in history and is known for his deep themes, innovative storytelling, and the use of practical effects. His notable films include "Memento," "Inception," "Interstellar," and the "Dark Knight" trilogy, among others.</p>
+            </section>
+            <section id="website-purpose"> <!-- Main contant2: Website Purpose, id=website purpose -->
+                <h2>Welcome to Nolan's World</h2>
+                <p>Explore Christopher Nolan's cinematic genius with us. From deep dives into his masterpieces to vibrant fan discussions, this is your space to celebrate and discover the magic of Nolan's films.</p>
+            </section>
+            <section id="newsletter"> <!-- section for the newsletter to make the website more interactive, id=newsletter -->
+                <h2>Stay Updated</h2> 
+                <p>Subscribe to our newsletter for the latest on Christopher Nolan's films, behind-the-scenes content, and exclusive insights.</p>
+                <form action="your_server_endpoint" method="POST"> <!-- form types and expected inputs -->
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button> <!-- submit button for the form -->
+                </form>
+            </section>
+            <section>
+                    <!-- References section for the poster amd movie info -->
+                    <h2>References</h2>
+                    <ol>
+                        <li id="ref-1">Rotten Tomatoes. (No Date). <i>Christopher Nolan</i>. <a href="https://www.rottentomatoes.com/celebrity/christopher_nolan" target="_blank">https://www.rottentomatoes.com/celebrity/christopher_nolan</a></li>
+                    </ol>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="social-media">
+            <h4>Follow us on</h4> <!-- this section is for the movie poster with class=movie-poster, it contain description of the poster with a link to the image -->
+            <a href="https://X.com/x" target="_blank" aria-label="X">X</a> <!-- Text link for X -->
+            <span> | </span> <!-- Separator for visual clarity -->
+            <a href="https://instagram.com/x" target="_blank" aria-label="Instagram">Instagram</a> <!-- Text link for Instagram -->
+            <span> | </span> <!-- Separator for visual clarity -->
+            <a href="https://facebook.com/x" target="_blank" aria-label="Facebook">Facebook</a> <!-- Text link for Facebook -->
+        </div>
+        <p>&copy; 2024 REEM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
